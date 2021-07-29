@@ -24,7 +24,7 @@ class Night(private var hp: Int, private var power: Int){
         else println("기사가 죽었습니다.")
     }
 
-    fun heal(){
+    private fun heal(){
         hp += 3
     }
 }
@@ -40,3 +40,5 @@ class Monster(private var hp: Int, private var power: Int){
         else println("몬스터가 죽었습니다.")
     }
 }
+
+// Tip. 변수 또는 함수 지정시 처음에는 private, val을 지정하고 필요한 경우 변경
